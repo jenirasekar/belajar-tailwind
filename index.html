@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- tailiwnd play cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              bubblegum: "#bada55"
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- border all -->
+    <style type="text/tailwindcss">
+      /* * {
+        border: 1px solid rebeccapurple;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 class="text-4xl font-bold text-center my-10">
+      Mari Belajar <span class="bg-gradient-to-r from-blue-300 to-teal-300 text-transparent bg-clip-text">Tailwind</span> CSS
+    </h1>
+
+    <section class="mb-10 bg-gradient-to-br from-indigo-200 via-pink-400 to-yellow-300">
+      <h2 class="font-semibold text-2xl text-center">Spacing</h2>
+      <div class="m-13 bg-yellow-200">Margin</div>
+      <div class="py-8 bg-orange-200">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+      <h2 class="font-semibold text-2xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-pink-200">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl ml-10 bg-red-200">
+      <h2 class="font-semibold mb-2 text-2xl">
+        Belajar Mengenai Typography pada TailwindCSS
+      </h2>
+      <div class="mb-4 text-gray-500">
+        By <a href="#" class="text-gray-700 font-semibold">Jenira</a>,
+        32-13-2023
+      </div>
+      <p class="mb-4">
+        Lorem ipsum, dolor sit amet
+        <a href="#" class="underline font-semibold text-blue-600"
+          >consectetur</a
+        >
+        adipisicing elit. Nemo exercitationem molestias voluptatum, doloremque
+        consectetur accusamus deleniti aliquid enim eum quod officiis facere
+        illum, possimus distinctio fugiat eligendi quisquam consequuntur qui
+        dignissimos. Magni voluptatum debitis voluptate sapiente eveniet vel
+        harum voluptatibus commodi, tempore quidem! Repudiandae, porro minima
+        ipsum quod quisquam debitis!
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam
+        nulla, ipsa deserunt nemo placeat magni modi possimus dicta libero.""
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+        mollitia vero laboriosam repellendus. Nihil laudantium pariatur eius,
+        non magni temporibus laborum exercitationem alias, et sequi praesentium
+        ea veritatis qui facilis.
+      </p>
+    </section>
+  </body>
+</html>
